@@ -1,165 +1,220 @@
-*{
-   margin: 0;
-   padding: 0; 
-   box-sizing: border-box;
-}
-ul{
-   list-style: none;
-}
-a{
-   text-decoration: none;
-   color:black;
-}
-header{
-   width: 100vw;
-   height:100vh;
-   background-image: url(Background\ Hero.svg);
-   background-position: bottom;
-   background-size: cover;
-   display: flex;
-   align-items: center;
-   background-attachment: scroll;
-   justify-content: center;
-}
-.header-content h1{
-   max-width: 160vh;
-   margin-left: 130px;
-   color: white;
-   font-size: 3rem;
-   padding:5px 200px 20px 100px;
-   text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header-content p{
-   font-size:1.1rem;
-   max-width: 170vh;
-   margin-left:50px ;
-   padding:5px 200px 20px 200px;
-   color: gray;
-   text-align: center;
-
+ul {
+  list-style: none;
 }
 
-
-.nav-links{
-   width: 75%;
-   position:absolute;
-   display: flex;
-   justify-content: space-between;
-   border: 1px solid white;
-   border-radius: 30px;
-   margin-top: 20px;
-   margin-left: 150px;
-   margin-right: 200px;
-   padding:3px;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-
-
-.nav-links li a{
-   display: flex;
-   align-items: center;
-   color:rgb(229, 244, 18);
-   font-size: 1.4rem;
-   font-weight: 600;
-   padding: 5px;
-   border-left: 50px;
-
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/Background\ Hero.svg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: scroll;
+  justify-content: center;
 }
 
-.btn{
-   border-radius: 30px;
-   max-width: 160vh;
-   background:yellow;
-   padding: 15px 25px;
-   margin-left: 400px;
-   color:black;
-   font-size: 1rem;
-   font-weight: 900;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-section{
-   height: 300vh;
-   position: absolute;
-   margin-bottom: 100px;
-   background-color:rgb(11, 11, 11);
-   background-size: cover;
-   background-position: bottom;
-}
-.h1class{
-   color: white;
-   font-size: 1.6rem;
-   margin-left: 340px;
-   padding-top: 120px;
-}
-.logos1{
-   position: absolute;
-   width: 250vh;
-   display:flex;
-   height: 50vh;
-   margin:0px 200px;
-
-}
-.logo1{
-   width: 30vh;
-   height: 100vh;
-   padding: 20px 10px 10px 10px;
-   margin-top: 30px;
-   margin-left: 15px;
-   margin-right: 5px;
+.header-content h1 {
+  max-width: 80%; /* Make it more flexible */
+  margin: 0 auto;
+  color: white;
+  font-size: 3rem;
+  padding: 5px 20px;
+  text-align: center;
 }
 
-.logos2{
-   width: 200vh;
-   display:flex;
-   height: 50vh;
-   margin: 0px 200px;
-   padding: 90px 10px 10px 15px;
-}
-.logo2{
-   width: 30vh;
-   margin-top: 30px;
-   height: 50vh;
-   margin-left: 15px;
-   padding: 10px 10px 10px 10px;
+.header-content p {
+  font-size: 1.1rem;
+  max-width: 80%;
+  color: gray;
+  text-align: center;
+  margin: 10px auto;
 }
 
-.btn2{
-   border-radius: 30px;
-   max-width: 160vh;
-   background:yellow;
-   padding: 10px 20px;
-   margin-left: 440px;
-   color:black;
-   font-size: 1rem;
-   font-weight: 400;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.nav-links {
+  width: 80%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a background for better visibility */
 }
 
-.page3 h4{
-   margin-top: 60px;
-   padding-left: 405px;
-   color: rgb(131, 185, 238);
-   font-size: 0.7em;
-   font-weight: 1000;
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  color: rgb(229, 244, 18);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 5px;
+  border-left: 50px;
 }
 
-.page3 h1{
-   max-width: 140vh;
-   margin-left: 220px;
-   color: white;
-   font-size: 2.4rem;
-   padding:20px 200px 20px 100px;
-   text-align: center;
-     
-}
-.page4{
-   width: 60vh;
-   margin-left: 100px;
-}
-.point1 img{
-   
-
+.btn {
+  border-radius: 30px;
+  background: yellow;
+  padding: 15px 25px;
+  margin: 20px auto;
+  display: block;
+  color: black;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+section {
+  padding-top: 100px; /* Prevents overlap with fixed navbar */
+  height: auto;
+  background-color: rgb(11, 11, 11);
+  background-size: cover;
+  background-position: bottom;
+}
 
+.h1class {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.logos1, .logos2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.logo1, .logo2 {
+  width: 20%; /* Makes logos flexible */
+  margin: 10px;
+  text-align: center;
+}
+
+.logos1 img, .logos2 img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.btn2 {
+  border-radius: 30px;
+  background: yellow;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page3 h4 {
+  margin-top: 60px;
+  color: rgb(131, 185, 238);
+  font-size: 0.7em;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.page3 h1 {
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-size: 2.4rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.page4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.point1, .point2, .point3 {
+  text-align: center;
+  margin: 20px;
+  flex: 1 1 30%; /* Makes the sections flexible */
+}
+
+.point1 img, .point2 img, .point3 img {
+  width: 30vh;
+  height: 30vh;
+}
+
+.page4 img {
+  width: 100%;
+  height: auto; /* Ensure images are responsive */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2rem; /* Smaller text on mobile */
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .logos1, .logos2 {
+    flex-direction: column; /* Stack logos vertically */
+  }
+
+  .logo1, .logo2 {
+    width: 80%; /* Reduce width for mobile */
+  }
+
+  .btn {
+    width: 80%; /* Make button take more space on smaller screens */
+  }
+
+  .page4 {
+    flex-direction: column; /* Stack page points vertically */
+  }
+
+  .point1, .point2, .point3 {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-content h1 {
+    font-size: 1.5rem; /* Even smaller text on very small screens */
+  }
+
+  .header-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 90%; /* Further reduce button width */
+  }
+}
