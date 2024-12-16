@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-links {
+  width: 70%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 9px;
+  background-color: black;
+}
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  color: rgb(229, 244, 18);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 5px;
+  border-left: 50px;
+}
+
+.container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  padding: 5px;
+  margin: 10px 20px;
+}
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  padding-left: 500px;
+  padding-top: 80px;
+  color: yellowgreen;
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  margin-left: 15px;
+  color: yellowgreen;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px 20px 20px;
+}
+.content1 {
+  margin-left: 30px;
+}
+#name {
+  border: 100px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  padding: 22px 360px 30px 20px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.btn3 {
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+  margin-left: 1200px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+.profile {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+.details {
+  width: 100%;
+  height: 55vh;
+  margin: 40px;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding-top: 40px;
+}
+.details h3 {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.details text {
+  margin-left: 160px;
+  padding-left: 30px;
+  color: black;
+}
+
+.btn4 {
+  width: 90%;
+  background-color: rgb(234, 120, 120);
+  font-size: 1rem;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+.footer {
+  color: white;
+  justify-content: center;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  padding: 160px;
+}
+.LearnHub {
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+}
+.Tailwind {
+  color: #242932;
+}
+
+@media (min-width: 1200px) {
+  .nav-links {
+    width: 70%;
+  }
+  h1 {
+    font-size: 2rem;
+    padding-left: 500px;
+  }
+  .btn3 {
+    margin-left: 1200px;
+  }
+}
+
+/* Large Screens (between 992px and 1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-links {
+    width: 80%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    padding-left: 400px;
+  }
+  .content {
+    font-size: 1.4rem;
+  }
+  .btn3 {
+    margin-left: 1000px;
+  }
+  .btn4 {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-links {
+    width: 90%;
+    padding: 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    padding-left: 200px;
+  }
+  .content {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .container {
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+  .details {
+    width: 95%;
+    margin: 20px;
+  }
+  .btn3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .nav-links {
+    flex-direction: column;
+    width: 95%;
+    padding: 6px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    padding-left: 20px;
+    text-align: center;
+  }
+  .content {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  #name {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .btn3 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 16px;
+  }
+  .footer {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+  .content {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 5px;
+  }
+  #name {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .details {
+    width: 100%;
+    margin: 10px 5px;
+    padding: 10px;
+  }
+  .btn3 {
+    margin: 10px auto;
+    padding: 8px;
+  }
+  .btn4 {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .LearnHub {
+    font-size: 20px;
+  }
+}
